@@ -74,8 +74,8 @@
         }        
     </script>
 </head>
-<body>
-    <ext:ResourceManager runat="server" />
+<body>    
+    <ext:ResourceManager runat="server" DirectEventUrl="Default.aspx" />
     
     <h1>Lazy Loading Data Associations</h1>
     <p>This example demonstrates the ability to lazy load associative data. For loading nested data in a single request, see the <a href="../Simple/">Simple</a> example.</p>

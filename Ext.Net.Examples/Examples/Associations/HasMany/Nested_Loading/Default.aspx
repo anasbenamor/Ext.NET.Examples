@@ -31,7 +31,7 @@
     </script>
 </head>
 <body>
-    <ext:ResourceManager runat="server" />
+    <ext:ResourceManager runat="server"  DirectEventUrl="Default.aspx"/>
 
     <ext:Model runat="server" Name="Books.Review">
         <Fields>

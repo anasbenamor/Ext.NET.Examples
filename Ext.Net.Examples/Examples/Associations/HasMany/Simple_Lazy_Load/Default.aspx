@@ -129,7 +129,7 @@
     <link href="/resources/css/examples.css" rel="stylesheet" type="text/css" />    
 </head>
 <body>
-    <ext:ResourceManager runat="server" />
+    <ext:ResourceManager runat="server"  DirectEventUrl="Default.aspx"/>
     
      <h1>Simple lazy load</h1>
      <p>Products for each user are loaded only once (caching on the client side)</p>
