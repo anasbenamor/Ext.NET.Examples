@@ -20,30 +20,8 @@ namespace Ext.Net.Examples
         {
             context.Response.ContentType = "application/json";
 
-            var start = 0;
-            var limit = 10;
-            var sort = string.Empty;
-            var dir = string.Empty;
-            var query = string.Empty;
-
-            if (!string.IsNullOrEmpty(context.Request["start"]))
-            {
-                start = int.Parse(context.Request["start"]);
-            }
-
-            if (!string.IsNullOrEmpty(context.Request["limit"]))
-            {
-                limit = int.Parse(context.Request["limit"]);
-            }
-
-            if (!string.IsNullOrEmpty(context.Request["sort"]))
-            {
-                sort = context.Request["sort"];
-            }
-
-            DataSorter ds = JSON.Deserialize<DataSorter[]>(sort)[0];
-
-            Paging<Plant> plants = Plant.PlantsPaging(start, limit, ds.Property, ds.Direction.ToString(), query);
+            StoreRequestParameters prms = new StoreRequestParameters(context);
+            Paging<Plant> plants = Plant.PlantsPaging(prms.Start, prms.Limit, prms.Sort[0].Property, prms.Sort[0].Direction.ToString(), string.Empty);
 
             context.Response.Write(JSON.Serialize(plants));
         }
