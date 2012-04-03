@@ -43,7 +43,7 @@
                     runat="server" 
                     RemoteSort="true" 
                     Buffered="true" 
-                    AutoLoad="false">
+                    PageSize="100">
                     <Proxy>
                         <ext:JsonPProxy Url="http://www.sencha.com/forum/remote_topics/index.php" SimpleSortMode="true">
                             <Reader>
@@ -85,15 +85,12 @@
 		        </Columns>
             </ColumnModel>           
             <View>
-                <ext:GridView runat="server" TrackOver="false" LoadMask="false">                    
+                <ext:GridView runat="server" TrackOver="false">                    
                 </ext:GridView>
             </View> 
             <SelectionModel>
                 <ext:RowSelectionModel runat="server" PruneRemoved="false" Mode="Multi" />
-            </SelectionModel>           
-            <Listeners>
-                <AfterRender Handler="var me = this; me.store.prefetch({start: 0, limit: 99, callback: function() { me.store.guaranteeRange(0, 49); }});" Delay="100" />                
-            </Listeners>
+            </SelectionModel>                       
         </ext:GridPanel>
     </form>
 </body>
