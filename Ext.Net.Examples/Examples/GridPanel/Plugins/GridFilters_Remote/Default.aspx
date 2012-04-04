@@ -11,7 +11,7 @@
         List<object> data = FiltersTestData.Data;
 
         string s = e.Parameters[this.GridFilters1.ParamPrefix];
-        //or with hardcoding - string s = e.Parameters["gridfilters"];;
+        //or with hardcoding - string s = e.Parameters["filter"];;
         
         
         //-- start filtering ------------------------------------------------------------
