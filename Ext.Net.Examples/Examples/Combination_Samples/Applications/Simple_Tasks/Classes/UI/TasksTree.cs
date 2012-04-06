@@ -56,7 +56,7 @@ namespace Ext.Net.Examples.SimpleTasks
                   Leaf = false,
                   IconCls = "icon-folder",
                   Expanded = true,
-                  Editable = false,
+                  //Editable = false,
                   CustomAttributes =
                   {
                       new ConfigItem("isFolder", "true", ParameterMode.Raw)

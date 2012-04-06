@@ -281,7 +281,7 @@ namespace Ext.Net.Examples.SimpleTasks
                 node.Text = tasksList.Name;
                 node.Leaf = !tasksList.IsFolder;
                 node.IconCls = tasksList.IsFolder ? "icon-folder" : "icon-category";
-                node.Editable = true;
+                //node.Editable = true;
                 node.CustomAttributes.Add(new ConfigItem("isFolder", JSON.Serialize(tasksList.IsFolder), ParameterMode.Raw));
                 node.Expanded = tasksList.IsFolder;
 
