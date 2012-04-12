@@ -157,7 +157,7 @@
                             <ext:TemplateColumn 
                                 runat="server"
                                 Text="Last Modified" 
-                                Адуч="30" 
+                                Flex="30" 
                                 DataIndex="lastmod" 
                                 TemplateString='{lastmod:date("m-d h:i a")}' 
                                 />

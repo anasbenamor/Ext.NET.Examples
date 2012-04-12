@@ -98,8 +98,36 @@
             </ext:Menu>
         </Menu>
     </ext:SplitButton>
+
+    <h2>9. SplitButton with custom drop down</h2>
     
-    <h2>9. CycleButton</h2>
+    <ext:SplitButton runat="server" Text="Text">
+        <Bin>
+            <ext:Panel runat="server" Width="150" Height="300" Layout="AccordionLayout" Floating="true">
+                <Items>
+                    <ext:Panel runat="server" Title="Item 1" />
+                    <ext:Panel runat="server" Title="Item 2" />
+                    <ext:Panel runat="server" Title="Item 3" />
+                    <ext:Panel runat="server" Title="Item 4" />
+                    <ext:Panel runat="server" Title="Item 5" />
+                </Items>
+                <BottomBar>
+                    <ext:Toolbar runat="server" ClassicButtonStyle="true">
+                        <Items>
+                            <ext:ToolbarFill runat="server" />
+                            <ext:Button runat="server" Text="Close" Handler="function(){this.up('panel').hide();}"/>    
+                        </Items>
+                    </ext:Toolbar>
+                </BottomBar>
+            </ext:Panel>
+        </Bin>
+        <Listeners>
+            <ArrowClick Handler="this.bin[0].show(); this.bin[0].alignTo(this.el);">                
+            </ArrowClick>
+        </Listeners>
+    </ext:SplitButton>
+    
+    <h2>10. CycleButton</h2>
     
     <ext:CycleButton runat="server" ShowText="true" PrependText="View As ">
         <Menu>
@@ -112,11 +140,11 @@
         </Menu>
     </ext:CycleButton>
     
-    <h2>10. Flat Button</h2>
+    <h2>11. Flat Button</h2>
     
     <ext:Button runat="server" Text="FlatButton" Icon="Accept" Flat="true" />
     
-    <h2>11. Custom Size Button</h2>
+    <h2>12. Custom Size Button</h2>
     
     <ext:Button ID="Button1" runat="server" Text="128 x 128" Height="128" Width="128" />
 </body>

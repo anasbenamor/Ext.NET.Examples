@@ -32,56 +32,41 @@
                 <Change Handler="#{Snappy}.surface.items.first().setAttributes({rotation: {degrees: newValue}}, true);" />
             </Listeners>
         </ext:Slider>
-        
-        <ext:DrawComponent runat="server"
-            AutoSize="true"
-            Height="350"
-            Padding="20"
-            ViewBox="false">
-            <Items>
-                <ext:Sprite 
-                    Type="Text" 
-                    Text="With Ext.NET 2.0 Drawing" 
-                    Fill="#000" 
-                    Font="18px Arial">
-                    <Rotate Degrees="45" />
-                </ext:Sprite>
-            </Items>
-        </ext:DrawComponent>
 
-        <ext:DrawComponent runat="server"
-            AutoSize="true"
+        <ext:DrawText runat="server"
             Height="350"
             Padding="20"
-            ViewBox="false">
+            Degrees="45"
+            Text="With Ext.NET 2.0 Drawing" 
+            >
+            <TextStyle Fill="#F00" Font="18px Arial" />
+        </ext:DrawText>
+       
+        <ext:DrawComponent runat="server"
+            Height="350"
+            Padding="20">
             <Items>
                 <ext:Sprite 
                     Type="Text" 
                     Text="Creating a rotated Text component" 
-                    Fill="#000" 
+                    Fill="#0F0" 
                     Font="18px Arial">
                     <Rotate Degrees="90" />
                 </ext:Sprite>
             </Items>
         </ext:DrawComponent>
 
-        <ext:DrawComponent ID="Snappy" runat="server"
-            AutoSize="true"
+        <ext:DrawText ID="Snappy" runat="server"
+            AutoSize="false"
+            ViewBox="false"
             Height="350"
             Width="200"
             Padding="20"
-            ViewBox="false">
-            <Items>
-                <ext:Sprite 
-                    Type="Text" 
-                    Text="Is a snap!" 
-                    Fill="#000" 
-                    Y="50"
-                    Font="18px Arial">
-                    <Rotate Degrees="315" />
-                </ext:Sprite>
-            </Items>
-        </ext:DrawComponent>
+            Degrees="315" 
+            Text="Is a snap!" 
+            >
+            <TextStyle Fill="#00F" Font="18px Arial" Y="50" />
+        </ext:DrawText>
     </form>    
 </body>
 </html>
