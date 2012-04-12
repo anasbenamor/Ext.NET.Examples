@@ -2,7 +2,7 @@
 	font-family : 'TTreg';
     padding     : 20px;
     font-size   : 15px !important;
-	background  : url(/resources/images/bgnoise.png) 0 0 repeat;
+	background  : url(../images/bgnoise.png) 0 0 repeat;
 }
 
 
@@ -14,7 +14,7 @@
 	width  : 100%;
 	color  : #00568d;
 	float  : left;
-	background  : url(/resources/images/titlebar-bg.jpg) 0 0 repeat;
+	background  : url(../images/titlebar-bg.jpg) 0 0 repeat;
 	font-family : 'TTbold';
 	text-shadow : 0 1px 0 rgba(255,255,255,0.8);
 }
@@ -53,7 +53,7 @@
 	font-family : 'TTlight';
 	font-size   : 12px;
 	line-height : 11px;
-	background  : url(/resources/images/titlebar-badge-bg.png) 0 0 no-repeat;
+	background  : url(../images/titlebar-badge-bg.png) 0 0 no-repeat;
 	width       : 105px;
 	height      : 16px;
 	float       : left;
@@ -67,7 +67,7 @@
 	float       : right;
 	width       : 197px;
 	height      : 68px;
-	background  : url(/resources/images/titlebar-logo-bg.jpg) 0 0 repeat;
+	background  : url(../images/titlebar-logo-bg.jpg) 0 0 repeat;
 	border-left : 1px solid #fff;
     cursor      : pointer;
 }
@@ -76,7 +76,7 @@
 	display : block;
 	width   : 100%;
 	height  : 100%;
-	background: url(/resources/images/ext.net-logo.png) 0 0 no-repeat;
+	background: url(../images/ext.net-logo.png) 0 0 no-repeat;
 	background-position: center center;
 }
 
@@ -130,7 +130,7 @@
 	font-size   : 12px;
 	line-height : 12px;
 	padding     : 4px 5px;
-	background  : url(/resources/images/black10.png) 0 0 repeat;
+	background  : url(../images/black10.png) 0 0 repeat;
 	text-transform        : uppercase;
 	-webkit-border-radius : 5px;
 	-moz-border-radius    : 5px;
@@ -144,7 +144,7 @@
 
 #welcome-links p {
 	margin     : 0 0 5px 0;
-	background : url(/resources/images/welcome-bullet.png) 0 0 no-repeat;
+	background : url(../images/welcome-bullet.png) 0 0 no-repeat;
 }
 
 #welcome-links span {
@@ -153,11 +153,11 @@
 	font-size   : 11px;
 	text-align  : center;
 	text-shadow : 0 -1px 0 rgba(0,0,0,0.3);
-	width    : 18px;
-	padding  : 0 6px;
-	margin   : 0 6px 5px 0;
-	position : relative;
-	top      : -2px;
+	width       : 18px;
+	padding     : 0 6px;
+	margin      : 0 6px 5px 0;
+	position    : relative;
+	top         : -2px;
 }
 
 #welcome-links a {
@@ -175,7 +175,7 @@
 	float      : left;
 	width      : 870px;
 	height     : 419px;
-	background : url(/resources/images/grid.png) bottom left no-repeat;
+	background : url(../images/grid.png) bottom left no-repeat;
 	-webkit-border-radius : 5px;
 	-moz-border-radius    : 5px;
 	border-radius : 5px;
@@ -184,7 +184,7 @@
 }
 
 a#grid-badge {
-	background     : url(/resources/images/grid-badge-bg.png) 0 0 repeat-x;
+	background     : url(../images/grid-badge-bg.png) 0 0 repeat-x;
 	font-family    : 'TTxbold';
 	font-size      : 16px;
 	text-transform : uppercase;
@@ -204,7 +204,7 @@ a#grid-badge:hover {
 }
 
 #welcome-grid #screens {
-	background : url(/resources/images/welcome-screens.png) 0 0 no-repeat;
+	background : url(../images/welcome-screens.png) 0 0 no-repeat;
 	width      : 816px;
 	height     : 250px;
 	margin     : 30px 0 0 0;
@@ -234,7 +234,7 @@ a#grid-badge:hover {
 	border     : 1px solid #ddd;
 	padding    : 5px 0 4px 0;
 	margin     : 0 12px;
-	background : url(/resources/images/button-bg-30tall.png) 0 0 repeat-x;
+	background : url(../images/button-bg-30tall.png) 0 0 repeat-x;
 	vertical-align : middle;
 }
 
@@ -254,7 +254,7 @@ a#grid-badge:hover {
 
 #welcome-footer span {
 	padding     : 6px 0 4px 46px;
-	background  : url(/resources/images/icon-briefcase.png) 0 0 no-repeat;
+	background  : url(../images/icon-briefcase.png) 0 0 no-repeat;
 	font-family : 'TTreg';
 }
 
@@ -336,7 +336,7 @@ div.thumb-wrap p {
 	margin-right : 5px;
 }
 
-.images-view .x-view-over { background : url(/resources/images/sample-over.gif) #d4e4fa no-repeat; }
+.images-view .x-view-over { background : url(../images/sample-over.gif) #d4e4fa no-repeat; }
 
 #sample-ct { padding : 6px 12px 24px 12px; }
 
@@ -347,7 +347,7 @@ div.thumb-wrap p {
 }
 
 #sample-ct h2 div {
-    background : transparent url(/resources/images/group-expand-sprite.gif) no-repeat 3px -47px;
+    background : transparent url(../images/group-expand-sprite.gif) no-repeat 3px -47px;
     padding    : 4px 4px 4px 17px;
     color      : #3764a0;
     font       : bold 11px tahoma, arial, helvetica, sans-serif;
@@ -401,7 +401,7 @@ td.thead{
     border-bottom : #dadada 1px solid;
     color         : #444;
     font-size     : 11px;
-    background    : url(/resources/images/item-hd4.gif) #f9f9f9 repeat-x 0px bottom;
+    background    : url(../images/item-hd4.gif) #f9f9f9 repeat-x 0px bottom;
     font-weight   : bold;
 }
 
@@ -428,14 +428,14 @@ td.alt2{
 /*  Icons
     -----------------------------------------------------------------------------------------------*/
 
-.icon-expand-all     { background-image : url(/resources/images/expand-all.gif) !important; }
-.icon-collapse-all   { background-image : url(/resources/images/collapse-all.gif) !important; }
+.icon-expand-all     { background-image : url(../images/expand-all.gif) !important; }
+.icon-collapse-all   { background-image : url(../images/collapse-all.gif) !important; }
 
-.icon-desktop        { background-image : url(/resources/icons/desktop.png) !important; }
-.icon-viewport       { background-image : url(/resources/icons/viewport.png) !important; }
-.icon-tab            { background-image : url(/resources/icons/tab.png) !important; }
-.icon-tabpanel       { background-image : url(/resources/icons/tabpanel.png) !important; }
-.icon-toolbar        { background-image : url(/resources/icons/toolbar.png) !important; }
+.icon-desktop        { background-image : url(../icons/desktop.png) !important; }
+.icon-viewport       { background-image : url(../icons/viewport.png) !important; }
+.icon-tab            { background-image : url(../icons/tab.png) !important; }
+.icon-tabpanel       { background-image : url(../icons/tabpanel.png) !important; }
+.icon-toolbar        { background-image : url(../icons/toolbar.png) !important; }
 
 /*
 .x-tree-icon-leaf {
@@ -450,11 +450,11 @@ td.alt2{
 #exampleTree .x-grid-cell-inner span {
     margin-left  : 8px;
     padding-left : 25px;
-    background   : transparent url(/resources/images/new.gif) no-repeat 0px 4px;
+    background   : transparent url(../images/new.gif) no-repeat 0px 4px;
 }
 
 #exampleTree .x-grid-tree-node-expanded .x-grid-cell-inner span {
-    background : transparent url(/resources/images/newgray.gif) no-repeat 0px 4px;
+    background : transparent url(../images/newgray.gif) no-repeat 0px 4px;
 }
 
 #exampleTree-body div {
@@ -576,4 +576,59 @@ tr.x-grid-row-selected td div.x-grid-cell-inner {
          url('/resources/fonts/TitilliumText22L006-webfont.svg#TTxbold') format('svg');
     font-weight : normal;
     font-style  : normal;
+}
+
+
+/* AD */
+
+#ee-ad-wrapper {
+	width: 870px;
+	height: 71px;
+	background: url(../images/ee-ad-bg.png) 0 0 repeat-x;
+	text-align: center;
+	margin: 30px 0 0 46px;
+}
+
+#ee-ad {
+	width: 819px;
+	height: 71px;
+	margin: 0 auto;
+	background: url(../images/ee-ad-content.png) 0 0 no-repeat;
+	color: #fff;
+	font-family: "TTxbold", Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	text-align: left;
+}
+
+#ee-ad div {
+	float: left;
+	margin: 1px 0 0 637px;
+}
+
+#ee-ad p {
+	height: 24px;
+	padding: 11px 0 0 0;
+}
+
+#ee-ad a {
+	float: right;
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 20px;
+	line-height: 20px;
+	background: #1791b1 url(../images/ee-ad-store-bg.png) 0 0 repeat-x;
+	border: 1px solid #699b64;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: 0px 2px 2px #547c51;
+	-webkit-box-shadow: 0px 2px 2px #547c51;
+	box-shadow: 0px 2px 2px #547c51;
+	padding: 8px 10px 7px 10px;
+	margin: 17px 0 0 0;
+}
+
+#ee-ad a:hover {
+	background: #00568d;
 }

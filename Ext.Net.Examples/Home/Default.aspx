@@ -22,12 +22,23 @@
 
     <ext:Viewport runat="server" Cls="welcome" Layout="VBoxLayout">
         <Items>
-            <ext:Container runat="server" Height="185">
+            <ext:Container runat="server" Height="285">
                 <Content>
+                    <div id="ee-ad-wrapper">
+	                    <div id="ee-ad">
+		                    <div>
+			                    <p>SAVE50</p>
+			                    <p style="padding-top:18px;">SAVE250</p>
+		                    </div>
+		                    <a href="http://www.ext.net/store/">Store &#187;</a>
+	                    </div>
+                    </div>
+
                     <div id="welcome-title">
 		                <div>Rapidly Build</div>
 		                <span>Your Vision</span>
 	                </div>
+
 	                <div id="welcome-links">
 		                <div id="title">Popular Examples</div>
 		                <div class="list">

@@ -221,7 +221,7 @@
                                                     FieldLabel="Unique Words" 
                                                     Number="20" 
                                                     MinValue="1" 
-                                                    MaxValue="99" 
+                                                    MaxValue="999" 
                                                     AllowDecimals="false"
                                                     AutoUpdateData="true"
                                                     />                                                
