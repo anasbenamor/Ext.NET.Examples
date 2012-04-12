@@ -242,6 +242,35 @@
     <Content Include="App_Readme\Transformer.NET.README.txt" />
     <Content Include="CHANGELOG.txt" />
     <Content Include="Code\SerializableEntity\ReadMe.txt" />
+    <Content Include="Examples\Associations\HasMany\Lazy_Load\config.xml" />
+    <Content Include="Examples\Associations\HasMany\Lazy_Load\CustomerGrid.ascx" />
+    <Content Include="Examples\Associations\HasMany\Lazy_Load\Default.aspx" />
+    <Content Include="Examples\Associations\HasMany\Lazy_Load\ItemLoader.ascx" />
+    <Content Include="Examples\Associations\HasMany\Lazy_Load\Logger.ascx" />
+    <Content Include="Examples\Associations\HasMany\Lazy_Load\Models.ascx" />
+    <Content Include="Examples\Associations\HasMany\Lazy_Load\OrderGrid.ascx" />
+    <Content Include="Examples\Associations\HasMany\Lazy_Load\OrderItemsGrid.ascx" />
+    <Content Include="Examples\Associations\HasMany\Nested_Loading\Book.css" />
+    <Content Include="Examples\Associations\HasMany\Nested_Loading\Books.xml" />
+    <Content Include="Examples\Associations\HasMany\Nested_Loading\config.xml" />
+    <Content Include="Examples\Associations\HasMany\Nested_Loading\Default.aspx" />
+    <Content Include="Examples\Associations\HasMany\Nested_Loading\images\book.png" />
+    <Content Include="Examples\Associations\HasMany\Nested_Loading\images\books\extjs-30-cookbook.jpg" />
+    <Content Include="Examples\Associations\HasMany\Nested_Loading\images\books\extjs-in-action.jpg" />
+    <Content Include="Examples\Associations\HasMany\Nested_Loading\images\books\learning-extjs-32.jpg" />
+    <Content Include="Examples\Associations\HasMany\Nested_Loading\images\books\learning-extjs.jpg" />
+    <Content Include="Examples\Associations\HasMany\Nested_Loading\images\legacy\header-bg.png" />
+    <Content Include="Examples\Associations\HasMany\Nested_Loading\images\legacy\sidebar-selected-bg.png" />
+    <Content Include="Examples\Associations\HasMany\Nested_Loading\images\star.gif" />
+    <Content Include="Examples\Associations\HasMany\Nested_Loading\images\star.png" />
+    <Content Include="Examples\Associations\HasMany\Nested_Loading\images\star_no.gif" />
+    <Content Include="Examples\Associations\HasMany\Nested_Loading\images\star_no.png" />
+    <Content Include="Examples\Associations\HasMany\Simple_Lazy_Load\config.xml" />
+    <Content Include="Examples\Associations\HasMany\Simple_Lazy_Load\Default.aspx" />
+    <Content Include="Examples\Associations\HasOne\Simple_Lazy_Load\config.xml" />
+    <Content Include="Examples\Associations\HasOne\Simple_Lazy_Load\Default.aspx" />
+    <Content Include="Examples\Associations\HasOne\Simple\config.xml" />
+    <Content Include="Examples\Associations\HasOne\Simple\Default.aspx" />
     <Content Include="Examples\Buttons\Basic\Default_Button\config.xml" />
     <Content Include="Examples\Buttons\Basic\Default_Button\Default.aspx" />
     <Content Include="Examples\Chart\Area\Basic\config.xml" />
@@ -277,6 +306,8 @@
     <Content Include="Examples\Chart\Live\Updates\Default.aspx" />
     <Content Include="Examples\Chart\Misc\Reload\config.xml" />
     <Content Include="Examples\Chart\Misc\Reload\Default.aspx" />
+    <Content Include="Examples\Chart\Misc\Theme\config.xml" />
+    <Content Include="Examples\Chart\Misc\Theme\Default.aspx" />
     <Content Include="Examples\Chart\Misc\ToolTips\config.xml" />
     <Content Include="Examples\Chart\Misc\ToolTips\Default.aspx" />
     <Content Include="Examples\Chart\Pie\Basic\config.xml" />
@@ -390,12 +421,24 @@
     <Content Include="Examples\Draw\Basic\Actions\Default.aspx" />
     <Content Include="Examples\Draw\Basic\Animation\config.xml" />
     <Content Include="Examples\Draw\Basic\Animation\Default.aspx" />
+    <Content Include="Examples\Draw\Basic\Animation_Playground\config.xml" />
+    <Content Include="Examples\Draw\Basic\Animation_Playground\Default.aspx" />
     <Content Include="Examples\Draw\Basic\Logos\config.xml" />
     <Content Include="Examples\Draw\Basic\Logos\Default.aspx" />
+    <Content Include="Examples\Draw\Basic\Punch_Chart\config.xml" />
+    <Content Include="Examples\Draw\Basic\Punch_Chart\Default.aspx" />
+    <Content Include="Examples\Draw\Basic\Reflection\bd.jpg" />
+    <Content Include="Examples\Draw\Basic\Reflection\config.xml" />
+    <Content Include="Examples\Draw\Basic\Reflection\Default.aspx" />
+    <Content Include="Examples\Draw\Basic\Rotate_Image\bd.jpg" />
+    <Content Include="Examples\Draw\Basic\Rotate_Image\config.xml" />
+    <Content Include="Examples\Draw\Basic\Rotate_Image\Default.aspx" />
     <Content Include="Examples\Draw\Basic\Rotate_Text\config.xml" />
     <Content Include="Examples\Draw\Basic\Rotate_Text\Default.aspx" />
     <Content Include="Examples\Draw\Basic\Tiger\config.xml" />
     <Content Include="Examples\Draw\Basic\Tiger\Default.aspx" />
+    <Content Include="Examples\Draw\Basic\Pie_Chart\config.xml" />
+    <Content Include="Examples\Draw\Basic\Pie_Chart\Default.aspx" />
     <Content Include="Examples\Draw\config.xml" />
     <Content Include="Examples\Element\config.xml" />
     <Content Include="Examples\Form\SpinnerField\Custom\config.xml" />
@@ -406,6 +449,10 @@
     <Content Include="Examples\Form\NumberField\Overview\Default.aspx" />
     <Content Include="Examples\Getting_Started\Introduction\CHANGELOG\Default.aspx" />
     <Content Include="Examples\Getting_Started\Introduction\README\Default.aspx" />
+    <Content Include="Examples\Associations\HasMany\Simple\config.xml" />
+    <Content Include="Examples\Associations\HasMany\Simple\Default.aspx" />
+    <Content Include="Examples\GridPanel\ArrayGrid\PageProxy_with_DirectMethod\config.xml" />
+    <Content Include="Examples\GridPanel\ArrayGrid\PageProxy_with_DirectMethod\Default.aspx" />
     <Content Include="Examples\GridPanel\ComponentColumn\Editor\config.xml" />
     <Content Include="Examples\GridPanel\ComponentColumn\Editor\Default.aspx" />
     <Content Include="Examples\GridPanel\Commands\Over_Commands\config.xml" />
@@ -552,7 +599,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Ext.Net\Ext.Net.csproj">
+    <ProjectReference Include="..\..\Ext.Net\Ext.Net.csproj">
       <Project>{195F2E70-F5E6-4A61-AAD9-2639657C29C4}</Project>
       <Name>Ext.Net</Name>
     </ProjectReference>

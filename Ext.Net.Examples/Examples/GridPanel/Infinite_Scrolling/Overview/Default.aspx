@@ -3,7 +3,7 @@
 <%@ Register Assembly="Ext.Net" Namespace="Ext.Net" TagPrefix="ext" %>
 
 <script runat="server">
-    protected void Store_ReadData(object sender, StoreRefreshDataEventArgs e)
+    protected void Store_ReadData(object sender, StoreReadDataEventArgs e)
     {
         Store store = (Store)sender;
         List<StockQuotation> data = new List<StockQuotation>();
@@ -63,7 +63,7 @@
                 <ext:Store 
                     runat="server" 
                     Buffered="true" 
-                    AutoLoad="false"
+                    PageSize="100"
                     OnReadData="Store_ReadData">
                     <Proxy>
                         <ext:PageProxy>
@@ -111,10 +111,7 @@
             </ColumnModel>           
             <View>
                 <ext:GridView runat="server" TrackOver="false" />
-            </View>            
-            <Listeners>
-                <AfterRender Handler="var me = this; me.store.prefetch({start: 0, limit: 99, callback: function() { me.store.guaranteeRange(0, 49); }});" Delay="100" />
-            </Listeners>
+            </View>                        
         </ext:GridPanel>
     </form>
 </body>

@@ -55,13 +55,13 @@
 
                 store.suspendEvents();
                 store.clearFilter();                
+                store.resumeEvents();
                 store.filter([{
                     fn : function (record) {
                         return record.get('price') >= values[0] && record.get('price') <= values[1];
                     }
                 }]);
-
-                store.resumeEvents();
+                
                 store.sort('name', 'ASC');                
             };
         </script>

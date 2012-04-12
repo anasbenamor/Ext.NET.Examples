@@ -18,6 +18,18 @@
 <head runat="server">
     <title>Area Chart - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript">
+        function saveChart (btn) {
+            Ext.MessageBox.confirm('Confirm Download', 'Would you like to download the chart as an image?', function(choice){
+                if(choice == 'yes'){
+                    btn.up('panel').down('chart').save({
+                        type: 'image/png'
+                    });
+                }
+            });
+        }
+    </script>
 </head>
 <body>
     <form runat="server">
@@ -40,6 +52,13 @@
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>
+                        <ext:Button 
+                            runat="server" 
+                            Text="Save Chart" 
+                            Icon="Disk"
+                            Handler="saveChart"
+                            />
+
                         <ext:Button 
                             runat="server" 
                             Text="Reload Data" 

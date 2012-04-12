@@ -222,11 +222,15 @@
                                     ID="PanelEditor" 
                                     runat="server"
                                     AutoSize="true"     
-                                    Alignment="tl-tl?"                               
+                                    Alignment="tl-tl?"                    
+                                    AllowBlur="false"           
                                     Shadow="False">
                                     <Field>
                                         <ext:HtmlEditor ID="HtmlEditor1" runat="server" />
                                     </Field>
+                                    <Listeners>
+                                        <StartEdit Handler="this.field.iframeEl.setHeight(this.field.getHeight() - this.field.getToolbar().getHeight() - 4);" Delay="10" />
+                                    </Listeners>
                                 </ext:Editor>
                             </Items>
                             <Listeners>

@@ -6,12 +6,12 @@
 <%@ Register Assembly="Ext.Net" Namespace="Ext.Net" TagPrefix="ext" %>
 
 <script runat="server">
-    protected void Store1_RefreshData(object sender, StoreRefreshDataEventArgs e)
+    protected void Store1_RefreshData(object sender, StoreReadDataEventArgs e)
     {
         List<object> data = FiltersTestData.Data;
 
         string s = e.Parameters[this.GridFilters1.ParamPrefix];
-        //or with hardcoding - string s = e.Parameters["gridfilters"];;
+        //or with hardcoding - string s = e.Parameters["filter"];;
         
         
         //-- start filtering ------------------------------------------------------------
