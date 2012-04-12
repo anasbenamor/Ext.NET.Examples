@@ -4,3 +4,4 @@ bin/
 Ext.Net.Examples/obj/
 Ext.Net.Examples/bin/
 *.user
+*.local.*
