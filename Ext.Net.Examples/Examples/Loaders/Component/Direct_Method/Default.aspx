@@ -4,7 +4,7 @@
 
 <script runat="server">
     [DirectMethod]
-    public string Items(string parameters)
+    public string Items()
     {
         return ComponentLoader.ToJson(new List<AbstractComponent>() { 
                 new Ext.Net.Panel{Title="Item 1", Icon = Icon.UserBrown},
@@ -15,7 +15,7 @@
     }
 
     [DirectMethod]
-    public static string UserControl(string parameters)
+    public static string UserControl()
     {
         return ComponentLoader.ToJson("~/Examples/Loaders/_Shared/Items.ascx");
     }
@@ -110,7 +110,7 @@
         <Buttons>
             <ext:Button runat="server" Text="Add Tab" Icon="PluginGo">
                 <Listeners>
-                    <Click Handler="this.up('panel').load();" />
+                    <Click Handler="this.up('panel').load({callback:function(){this.setActiveTab(this.items.getCount()-1)}, scope: this.up('panel')});" />
                 </Listeners>
             </ext:Button>
         </Buttons>

@@ -13,10 +13,6 @@
             cursor: move;
         }
     </style>
-
-    <script runat="server">
-      
-    </script>
 </head>
 <body>
     <form runat="server">
@@ -34,12 +30,12 @@
         <ext:DrawComponent runat="server" 
             Width="400" 
             Height="400"
-            Cls="cursor-dragme"
+            Cls="cursor-dragme x-hide-visibility"            
             Floating="true">
             <DraggableConfig Constrain="true" ConstrainTo="={Ext.getBody()}">
             </DraggableConfig>
             <Listeners>
-                <AfterRender Handler="this.el.center();" />
+                <AfterRender Handler="this.el.center(); this.removeCls('x-hide-visibility');" Delay="1" />
             </Listeners>
             <Items>
                 <ext:Sprite

@@ -3,7 +3,7 @@
 
 <script runat="server">
     [DirectMethod]
-    public object BindData(string action, Dictionary<string, object> extraParams, object serviceParams)
+    public object BindData(string action, Dictionary<string, object> extraParams)
     {
         StoreRequestParameters prms = new StoreRequestParameters(extraParams);
 

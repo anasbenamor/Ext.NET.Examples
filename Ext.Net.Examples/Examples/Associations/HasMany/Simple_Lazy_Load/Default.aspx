@@ -25,7 +25,7 @@
     }
 
     [DirectMethod]
-    public object GetProducts(string action, Dictionary<string, object> extraParams, object serviceParams)
+    public object GetProducts(string action, Dictionary<string, object> extraParams)
     {
         var userId = -1;
 

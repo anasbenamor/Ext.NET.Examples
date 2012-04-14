@@ -13,7 +13,7 @@
     }
 
     [DirectMethod(ShowMask = true, CustomTarget = "AddressPanel")]
-    public object GetAddress(string action, Dictionary<string, object> extraParams, object serviceParamss)
+    public object GetAddress(string action, Dictionary<string, object> extraParams)
     {
         var id = Convert.ToInt32(extraParams["id"]);
         return this.Addresses.Where(a => a.Id == id);

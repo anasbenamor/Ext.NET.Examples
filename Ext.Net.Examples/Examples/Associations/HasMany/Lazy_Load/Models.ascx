@@ -131,7 +131,7 @@
     }
 
     [DirectMethod(IDMode = DirectMethodProxyIDMode.None)]
-    public object GetCustomers(string action, Dictionary<string,object> extraParams, object serviceParams)
+    public object GetCustomers(string action, Dictionary<string,object> extraParams)
     {
         if (extraParams.ContainsKey("id"))
         {
@@ -143,7 +143,7 @@
     }
 
     [DirectMethod(IDMode = DirectMethodProxyIDMode.None)]
-    public object GetOrders(string action, Dictionary<string, object> extraParams, object serviceParams)
+    public object GetOrders(string action, Dictionary<string, object> extraParams)
     {
         if (extraParams.ContainsKey("id"))
         {
@@ -164,7 +164,7 @@
     }
 
     [DirectMethod(IDMode = DirectMethodProxyIDMode.None)]
-    public object GetOrderItems(string action, Dictionary<string, object> extraParams, object serviceParams)
+    public object GetOrderItems(string action, Dictionary<string, object> extraParams)
     {
         if (extraParams.ContainsKey("id"))
         {

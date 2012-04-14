@@ -4,8 +4,15 @@
 
 <script runat="server">
     
-    [DirectMethod]
-    public object BindData(string action, Dictionary<string, object> extraParams, object serviceParams)
+    /// <summary>
+    /// Possible arguments: 
+    ///     - string action
+    ///     - string action, Dictionary<string, object> extraParams
+    ///     - string action, Dictionary<string, object> extraParams, object serviceParams
+    /// </summary>
+    /// <returns></returns>
+    [DirectMethod]    
+    public object BindData()
     {
         return this.Data; 
     }

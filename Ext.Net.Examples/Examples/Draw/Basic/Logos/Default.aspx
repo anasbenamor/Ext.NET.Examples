@@ -46,7 +46,7 @@
                     <Items>
                         <ext:Panel runat="server" Title="Safari" Layout="FitLayout">
                             <Items>
-                                <ext:DrawComponent runat="server" ViewBox="true" AutoSize="true">
+                                <ext:DrawComponent runat="server">
                                     <Gradients>
                                         <ext:Gradient GradientID="blackblue" Angle="90">
                                             <Stops>
@@ -64,7 +64,7 @@
 
                         <ext:Panel runat="server" Title="Sencha" Layout="FitLayout">
                             <Items>
-                                <ext:DrawComponent runat="server" ViewBox="true" AutoSize="true">
+                                <ext:DrawComponent runat="server">
                                     <Gradients>
                                         <ext:Gradient GradientID="grad1" Angle="100">
                                             <Stops>
@@ -104,7 +104,7 @@
 
                         <ext:Panel runat="server" Title="Firefox" Layout="FitLayout">
                             <Items>
-                                <ext:DrawComponent runat="server" ViewBox="true">
+                                <ext:DrawComponent runat="server">
                                     <Gradients>
                                         <ext:Gradient GradientID="blackblue" Angle="90">
                                             <Stops>
@@ -122,7 +122,7 @@
 
                         <ext:Panel runat="server" Title="Explorer" Layout="FitLayout">
                             <Items>
-                                <ext:DrawComponent runat="server" ViewBox="true">
+                                <ext:DrawComponent runat="server">
                                     <Gradients>
                                         <ext:Gradient GradientID="blackblue" Angle="90">
                                             <Stops>
@@ -140,7 +140,7 @@
 
                         <ext:Panel runat="server" Title="Chrome" Layout="FitLayout">
                             <Items>
-                                <ext:DrawComponent runat="server" ViewBox="true">
+                                <ext:DrawComponent runat="server">
                                     <Gradients>
                                         <ext:Gradient GradientID="blackblue" Angle="90">
                                             <Stops>
@@ -158,7 +158,7 @@
 
                         <ext:Panel runat="server" Title="Opera" Layout="FitLayout">
                             <Items>
-                                <ext:DrawComponent runat="server" ViewBox="true">
+                                <ext:DrawComponent runat="server">
                                     <Gradients>
                                         <ext:Gradient GradientID="blackblue" Angle="90">
                                             <Stops>
